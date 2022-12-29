@@ -9,12 +9,25 @@
     <style>
         @keyframes sliding {
 
-            from {
+            0% {
                 background-color: yellow;
+                left: 0;
+                top: 0;
             }
 
-            to {
+            25% {}
+
+            50% {
+                background-color: brown;
+                top: 140px;
+            }
+
+            75% {}
+
+            100% {
                 background-color: blue;
+                left: 340px;
+                top: 0;
             }
 
         }
@@ -40,8 +53,9 @@
             height: 60px;
             border-radius: 50%;
             background-color: red;
-            animation: sliding 0.5s ease-in-out 0.5s infinite alternate;
+            animation: sliding 1s ease-in-out 0.5s infinite alternate;
             animation-play-state: running;
+            position: relative;
         }
 
         /* .ball2 {
