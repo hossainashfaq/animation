@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes sliding {
+
+            from {
+                background-color: yellow;
+            }
+
+            to {
+                background-color: blue;
+            }
+
+        }
+
+        @keyframes rassel-ball {
+            from {
+                background-color: black;
+            }
+
+            to {
+                background-color: #fff;
+            }
+        }
+
+        .stage {
+            width: 400px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        .ball {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: red;
+            animation: sliding 0.5s ease-in-out 0.5s infinite alternate;
+            animation-play-state: running;
+        }
+
+        .ball2 {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: red;
+            animation: rassel-ball 2s ease-in-out 0.5s infinite alternate;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is our dancing area</h1>
+    <div class="stage">
+
+        <div class="ball">
+
+        </div>
+        <div class="ball2">
+
+        </div>
+    </div>
+</body>
+
+</html>
